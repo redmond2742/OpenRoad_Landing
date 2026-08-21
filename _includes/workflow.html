@@ -1,0 +1,43 @@
+{%- comment -%} Collect → Process → Review → Map → Export. Optional include.heading / include.lead. {%- endcomment -%}
+<section class="section workflow" id="workflow">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">The workflow</p>
+      <h2 class="section__title">{{ include.heading | default: "Collect → Process → Review → Map → Export" }}</h2>
+      <p class="section__lead">{{ include.lead | default: "One continuous pipeline from the moment you start driving to open, shareable data." }}</p>
+    </div>
+
+    <ol class="workflow__steps">
+      <li class="workflow__step">
+        <span class="workflow__num">01</span>
+        <span class="workflow__icon">{% include icon.html name="video" %}</span>
+        <h3>Collect</h3>
+        <p>Record video, GPS, speed, heading, and accelerometer data from your iPhone as you drive, ride, or walk.</p>
+      </li>
+      <li class="workflow__step">
+        <span class="workflow__num">02</span>
+        <span class="workflow__icon">{% include icon.html name="layers" %}</span>
+        <h3>Process</h3>
+        <p>Run trips against existing inventory files — GTSS, GTFS, GIS/GeoJSON, and CSV asset inventories.</p>
+      </li>
+      <li class="workflow__step">
+        <span class="workflow__num">03</span>
+        <span class="workflow__icon">{% include icon.html name="swipe" %}</span>
+        <h3>Review</h3>
+        <p>Confirm or dismiss observations with a fast, simple swipe interface — human judgment in the loop.</p>
+      </li>
+      <li class="workflow__step">
+        <span class="workflow__num">04</span>
+        <span class="workflow__icon">{% include icon.html name="map" %}</span>
+        <h3>Map</h3>
+        <p>See results placed in geographic context, linked to the roads and assets they describe.</p>
+      </li>
+      <li class="workflow__step">
+        <span class="workflow__num">05</span>
+        <span class="workflow__icon">{% include icon.html name="export" %}</span>
+        <h3>Export</h3>
+        <p>Output final data as GeoJSON and other open formats, ready for GIS, agencies, and analysis.</p>
+      </li>
+    </ol>
+  </div>
+</section>

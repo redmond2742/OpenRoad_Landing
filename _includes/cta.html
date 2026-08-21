@@ -1,0 +1,28 @@
+{%- comment -%}
+  Call-to-action band. Params:
+  include.title, include.text, include.secondary_label, include.secondary_url
+{%- endcomment -%}
+<section class="section cta-band">
+  <div class="container cta-band__inner">
+    <div class="cta-band__text">
+      <h2 class="cta-band__title">{{ include.title | default: "Turn your next trip into open roadway data" }}</h2>
+      <p>{{ include.text | default: "Download OpenRoad for iPhone and start collecting, reviewing, and mapping the road around you." }}</p>
+    </div>
+    <div class="cta-band__actions">
+      {% if site.app_store_url and site.app_store_url != "" %}
+        <a class="btn btn--primary" href="{{ site.app_store_url }}">Download on the App Store</a>
+      {% else %}
+        <span class="btn btn--primary btn--disabled" aria-disabled="true" title="Coming soon">Coming soon to the App Store</span>
+      {% endif %}
+      {% if include.secondary_url %}
+        {%- assign sec = include.secondary_url -%}
+        {%- if sec contains "://" or sec contains "mailto:" -%}
+          {%- assign sec_href = sec -%}
+        {%- else -%}
+          {%- assign sec_href = sec | relative_url -%}
+        {%- endif -%}
+        <a class="btn btn--ghost" href="{{ sec_href }}">{{ include.secondary_label | default: "Learn more" }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

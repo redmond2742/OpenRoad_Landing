@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+description: "Writing about OpenRoad development, GTSS, GTFS, citizen science, dashcams, bike data collection, pavement sensing, and open roadway data."
+permalink: /blog/
+body_class: page-blog
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Blog</p>
+    <h1 class="page-hero__title">Notes on open roadway data</h1>
+    <p class="page-hero__subtitle">
+      Development updates and deep dives on GTSS, GTFS, citizen science, dashcams, bike data collection,
+      pavement sensing, and the case for open roadway data.
+    </p>
+  </div>
+</section>
+
+<div class="container page-body">
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <a class="post-card" href="{{ post.url | relative_url }}">
+            <p class="post-card__meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+              {% if post.tags and post.tags.size > 0 %}<span class="post-card__tag">{{ post.tags | first }}</span>{% endif %}
+            </p>
+            <h2 class="post-card__title">{{ post.title }}</h2>
+            <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 34 }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts yet — check back soon.</p>
+  {% endif %}
+</div>

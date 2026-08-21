@@ -1,0 +1,43 @@
+{%- comment -%} Citizen science section. {%- endcomment -%}
+<section class="section citizen" id="citizen-science">
+  <div class="container citizen__inner">
+    <div class="citizen__intro">
+      <p class="eyebrow">Citizen science</p>
+      <h2 class="section__title">Every trip is a chance to document the road</h2>
+      <p class="section__lead">
+        OpenRoad isn't only for inspectors. Drivers, cyclists, pedestrians, volunteers, and advocates can all
+        record what they encounter and turn it into structured data.
+      </p>
+      <p>
+        When many people travel the same corridors, their observations add up. Repeated observations from
+        multiple users create stronger crowd signals — helping agencies identify locations that may need
+        further review or improvement, backed by evidence from the field rather than a single report.
+      </p>
+    </div>
+
+    <ul class="who-grid" aria-label="Who can contribute">
+      <li class="who-card"><span class="who-card__icon">{% include icon.html name="gps" %}</span><h3>Drivers</h3><p>Capture signal visibility, signage, and pavement condition on everyday commutes.</p></li>
+      <li class="who-card"><span class="who-card__icon">{% include icon.html name="route" %}</span><h3>Cyclists</h3><p>Document bike lanes, hazards, and gaps in the network from the saddle.</p></li>
+      <li class="who-card"><span class="who-card__icon">{% include icon.html name="pin" %}</span><h3>Pedestrians</h3><p>Flag crosswalks, curb ramps, and sidewalk conditions where you walk.</p></li>
+      <li class="who-card"><span class="who-card__icon">{% include icon.html name="users" %}</span><h3>Volunteers</h3><p>Run organized surveys of a neighborhood, campus, or transit corridor.</p></li>
+      <li class="who-card"><span class="who-card__icon">{% include icon.html name="check" %}</span><h3>Advocates</h3><p>Build a mapped, open evidence base for safer, better-maintained streets.</p></li>
+    </ul>
+
+    <div class="citizen__signal">
+      <div class="citizen__signal-text">
+        <h3>How crowd signal works</h3>
+        <p>
+          One observation is a data point. Many observations of the same location, from different people at
+          different times, become a signal. OpenRoad keeps each observation structured and geolocated, so
+          agencies can weigh corroborating reports and prioritize where to look next.
+        </p>
+      </div>
+      <div class="citizen__signal-viz" aria-hidden="true">
+        <span class="signal-dot signal-dot--1"></span>
+        <span class="signal-dot signal-dot--2"></span>
+        <span class="signal-dot signal-dot--3"></span>
+        <span class="signal-pulse"></span>
+      </div>
+    </div>
+  </div>
+</section>

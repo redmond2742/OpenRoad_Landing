@@ -1,0 +1,101 @@
+---
+layout: home
+title: "OpenRoad — Your drive, recorded as data"
+description: "OpenRoad is an iOS app that turns everyday trips into structured roadway data — collect, process, review, map, and export GTSS, GTFS, GIS, CSV, and accelerometer observations as GeoJSON."
+body_class: page-home
+---
+
+<section class="hero">
+  <span class="hero__grid" aria-hidden="true"></span>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__badge"><span class="dot"></span> iOS app · open roadway data</span>
+      <h1 class="hero__title">Your drive,<br><span class="accent">recorded as data.</span></h1>
+      <p class="hero__lead">
+        OpenRoad turns everyday trips into structured roadway data. Record video, GPS, speed,
+        heading, and accelerometer data from your iPhone — then process, review, map, and export it.
+      </p>
+      <div class="hero__actions">
+        {% if site.app_store_url and site.app_store_url != "" %}
+          <a class="btn btn--primary" href="{{ site.app_store_url }}">Download on the App Store</a>
+        {% else %}
+          <span class="btn btn--primary btn--disabled" aria-disabled="true">Coming soon to the App Store</span>
+        {% endif %}
+        <a class="btn btn--ghost" href="{{ '/app/' | relative_url }}">See how it works</a>
+      </div>
+      <p class="hero__pipe">
+        <b>Collect</b> <span class="arrow">→</span> <b>Process</b> <span class="arrow">→</span>
+        <b>Review</b> <span class="arrow">→</span> <b>Map</b> <span class="arrow">→</span> <b>Export</b>
+      </p>
+    </div>
+
+    <div class="hero__media">
+      <div class="phone" role="img" aria-label="OpenRoad recording a trip: a mapped route with a live data HUD">
+        <div class="phone__screen">
+          <svg class="phone__route" viewBox="0 0 260 560" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
+                  fill="none" stroke="#6a675e" stroke-width="15" stroke-linecap="round"/>
+            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
+                  fill="none" stroke="#17365d" stroke-width="7" stroke-linecap="round"/>
+            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
+                  fill="none" stroke="#f6f4ec" stroke-width="1.4" stroke-dasharray="3 10" stroke-linecap="round"/>
+            <circle cx="150" cy="320" r="6" fill="#9a6b0f" stroke="#eae6da" stroke-width="1.5"/>
+            <circle cx="120" cy="120" r="6" fill="#1f6b6b" stroke="#eae6da" stroke-width="1.5"/>
+            <circle cx="40" cy="540" r="8" fill="#fffdf7" stroke="#17365d" stroke-width="3"/>
+          </svg>
+          <span class="phone__tag">● REC · trip-0412.mov</span>
+          <div class="phone__hud">
+            <div class="row"><span class="k">speed</span><span>34 mph</span></div>
+            <div class="row"><span class="k">heading</span><span>NE · 47°</span></div>
+            <div class="row"><span class="k">accel</span><span>0.98 g</span></div>
+            <div class="row"><span class="k">status</span><span class="rec">recording</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section map-band">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">More than road inspection</p>
+      <h2 class="section__title">A platform for turning field observations into open data</h2>
+      <p class="section__lead">OpenRoad connects the data agencies already have with what people actually see on the road — captured, reviewed, and exported in open formats.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature">
+        <span class="feature__icon">{% include icon.html name="video" %}</span>
+        <h3>Sensor-rich capture</h3>
+        <p>Video plus GPS, speed, heading, and accelerometer — recorded together, time-aligned, on hardware you already own.</p>
+      </article>
+      <article class="feature">
+        <span class="feature__icon">{% include icon.html name="layers" %}</span>
+        <h3>Works with your inventories</h3>
+        <p>Process trips against GTSS, GTFS, GIS/GeoJSON, and CSV asset files — no need to start your data from scratch.</p>
+      </article>
+      <article class="feature">
+        <span class="feature__icon">{% include icon.html name="swipe" %}</span>
+        <h3>Human-in-the-loop review</h3>
+        <p>A simple swipe interface keeps a person confirming every observation before it becomes a record.</p>
+      </article>
+      <article class="feature">
+        <span class="feature__icon">{% include icon.html name="export" %}</span>
+        <h3>Open by default</h3>
+        <p>Export final data as GeoJSON and other open formats that drop straight into GIS and agency workflows.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% include workflow.html %}
+
+{% include supported-data.html %}
+
+{% include citizen-science.html %}
+
+{% include cta.html
+   title="Turn your next trip into open roadway data"
+   text="Download OpenRoad for iPhone and start collecting, reviewing, and mapping the road around you."
+   secondary_label="Explore the app"
+   secondary_url="/app/" %}

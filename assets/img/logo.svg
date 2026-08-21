@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" role="img" aria-label="OpenRoad">
+  <rect x="1" y="7" width="30" height="30" rx="4" fill="#17365d" stroke="#0f2745"/>
+  <path d="M8 32 C 12 20, 24 20, 28 12" fill="none" stroke="#f6f4ec" stroke-width="1.4" stroke-dasharray="2.5 3.5"/>
+  <circle cx="8" cy="32" r="3" fill="#9a6b0f"/>
+  <circle cx="28" cy="12" r="3" fill="#1f6b6b"/>
+  <text x="42" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="#17365d">Open<tspan fill="#97331f">Road</tspan></text>
+</svg>

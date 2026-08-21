@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="OpenRoad — Your drive, recorded as data">
+  <defs>
+    <pattern id="gridOG" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#17365d" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#f6f4ec"/>
+  <rect width="1200" height="630" fill="url(#gridOG)"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#17365d"/>
+
+  <!-- logo mark -->
+  <rect x="80" y="90" width="72" height="72" rx="9" fill="#17365d" stroke="#0f2745"/>
+  <path d="M96 148 C 106 118, 130 118, 140 100" fill="none" stroke="#f6f4ec" stroke-width="3" stroke-dasharray="5 7"/>
+  <circle cx="96" cy="148" r="7" fill="#9a6b0f"/>
+  <circle cx="140" cy="100" r="7" fill="#1f6b6b"/>
+  <text x="176" y="147" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#17365d">Open<tspan fill="#97331f">Road</tspan></text>
+
+  <!-- headline -->
+  <text x="80" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="bold" fill="#17365d">Your drive,</text>
+  <text x="80" y="420" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="bold" fill="#97331f">recorded as data.</text>
+
+  <text x="80" y="486" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#3f3f3a">An iOS app that turns everyday trips into structured roadway data.</text>
+
+  <!-- pipeline -->
+  <text x="80" y="556" font-family="Courier New, monospace" font-size="26" fill="#6a675e">Collect  →  Process  →  Review  →  Map  →  Export</text>
+
+  <rect x="0" y="618" width="1200" height="12" fill="#a7a091"/>
+</svg>

@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="{{ '/' | relative_url }}" aria-label="OpenRoad home">{% include logo.html %}</a>
+      <p class="site-footer__tagline">Your drive, recorded as data.</p>
+      <p class="site-footer__blurb">Turning field observations into structured, mapped, open roadway data.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <h2 class="site-footer__heading">Explore</h2>
+      <ul>
+        {%- for item in site.nav -%}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <nav class="site-footer__nav" aria-label="Resources">
+      <h2 class="site-footer__heading">Data & Open Formats</h2>
+      <ul>
+        <li><a href="{{ '/app/' | relative_url }}">GeoJSON export</a></li>
+        <li><a href="{{ '/app/#supported-data' | relative_url }}">GTSS · GTFS · CSV · GIS</a></li>
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}. Open roadway data for everyone.</p>
+  </div>
+</footer>

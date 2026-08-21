@@ -1,0 +1,54 @@
+{%- comment -%} Supported data cards. {%- endcomment -%}
+<section class="section supported" id="supported-data">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">Supported data</p>
+      <h2 class="section__title">Built to work with the data agencies already have</h2>
+      <p class="section__lead">Process your trips against established inventory and standards formats — then add what you observe in the field.</p>
+    </div>
+
+    <div class="data-grid">
+      <article class="data-card">
+        <span class="data-card__icon data-card__icon--signal">{% include icon.html name="signal" %}</span>
+        <h3 class="data-card__title">GTSS</h3>
+        <p class="data-card__tag">Signal visibility &amp; sight distance</p>
+        <p>Evaluate whether traffic signals are visible and legible along the approach, and where sight lines break down.</p>
+      </article>
+
+      <article class="data-card">
+        <span class="data-card__icon data-card__icon--bus">{% include icon.html name="bus" %}</span>
+        <h3 class="data-card__title">GTFS</h3>
+        <p class="data-card__tag">Bus stops &amp; transit infrastructure</p>
+        <p>Compare scheduled stops and transit assets against what actually exists on the street today.</p>
+      </article>
+
+      <article class="data-card">
+        <span class="data-card__icon data-card__icon--sign">{% include icon.html name="sign" %}</span>
+        <h3 class="data-card__title">CSV</h3>
+        <p class="data-card__tag">Signs, markings &amp; static assets</p>
+        <p>Load asset inventories — signs, markings, crosswalks, streetlights — from plain CSV files.</p>
+      </article>
+
+      <article class="data-card">
+        <span class="data-card__icon data-card__icon--route">{% include icon.html name="route" %}</span>
+        <h3 class="data-card__title">GPS / GIS</h3>
+        <p class="data-card__tag">Routes &amp; geographic infrastructure</p>
+        <p>Align trips to routes and GIS/GeoJSON layers to place every observation in geographic context.</p>
+      </article>
+
+      <article class="data-card">
+        <span class="data-card__icon data-card__icon--wave">{% include icon.html name="wave" %}</span>
+        <h3 class="data-card__title">Accelerometer</h3>
+        <p class="data-card__tag">Pavement &amp; roadway condition events</p>
+        <p>Detect rough pavement, potholes, and jolts from motion data to flag condition events by location.</p>
+      </article>
+
+      <article class="data-card data-card--export">
+        <span class="data-card__icon data-card__icon--export">{% include icon.html name="export" %}</span>
+        <h3 class="data-card__title">GeoJSON &amp; open formats</h3>
+        <p class="data-card__tag">Export</p>
+        <p>Everything comes back out as open, interoperable data your GIS and partners can use immediately.</p>
+      </article>
+    </div>
+  </div>
+</section>

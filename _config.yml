@@ -1,0 +1,86 @@
+title: OpenRoad
+tagline: Your drive, recorded as data.
+description: >-
+  OpenRoad is an iOS app that turns everyday trips into structured roadway data.
+  Record video, GPS, speed, heading, and accelerometer data, process trips
+  against existing inventory files, review observations with a swipe interface,
+  map results, and export open formats like GeoJSON.
+
+# Deployment: user/org site (served at the domain root). baseurl stays empty.
+# To move to a project site (username.github.io/OpenRoad), set baseurl: "/OpenRoad".
+# Every internal link uses relative_url, so this is the only place you change it.
+url: "https://openroad.example.com"
+baseurl: ""
+
+author:
+  name: The OpenRoad Team
+
+# ---- Drop-in slots (fill these when assets/links are ready) ----
+# Leave app_store_url empty to show a "Coming Soon" CTA; set it to go live.
+app_store_url: ""
+# Placeholder for the external Asset CSV Builder web app.
+csv_builder_url: "#"
+
+# Swappable image assets. To replace one, either drop a new file at the same
+# path in assets/img/ (keeping the filename), or point the value at a new file.
+# Set a value to "" to hide that image (optional ones simply won't render).
+images:
+  app_collect: /assets/img/screen-collect.svg   # App page — "Collect" screen
+  app_review:  /assets/img/screen-review.svg    # App page — "Review" screen
+  app_map:     /assets/img/screen-map.svg        # App page — "Map / Export" screen
+  logo:        /assets/img/logo.svg              # optional standalone wordmark
+
+# Social share / SEO preview image (used by jekyll-seo-tag as og:image).
+# For best results across platforms, replace with a 1200x630 PNG or JPG and
+# update this path accordingly.
+image: /assets/img/og-image.svg
+# Optional social handles used by jekyll-seo-tag.
+twitter_username: ""
+github_username: ""
+
+# Primary navigation (data-driven; edit here to change the nav everywhere).
+nav:
+  - title: Home
+    url: /
+  - title: App
+    url: /app/
+  - title: CSV Builder
+    url: /csv-builder/
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+timezone: America/New_York
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyll-feed output path
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/img/og-image.svg   # default social/SEO preview; override per page via front matter
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache
+  - node_modules

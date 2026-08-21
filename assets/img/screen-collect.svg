@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" role="img" aria-label="OpenRoad app — collecting a trip">
+  <defs>
+    <pattern id="gridC" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#17365d" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="320" height="660" fill="#efece1"/>
+  <rect width="320" height="660" fill="url(#gridC)"/>
+
+  <!-- status bar -->
+  <rect width="320" height="34" fill="#fffdf7"/>
+  <line x1="0" y1="34" x2="320" y2="34" stroke="#a7a091"/>
+  <text x="14" y="22" font-family="Courier New, monospace" font-size="13" fill="#1c1c1a">9:41</text>
+  <text x="214" y="22" font-family="Courier New, monospace" font-size="12" fill="#2f6b3f">GPS ✓</text>
+  <circle cx="278" cy="18" r="5" fill="#97331f"/>
+  <text x="288" y="22" font-family="Courier New, monospace" font-size="12" fill="#97331f">REC</text>
+
+  <!-- route -->
+  <path d="M60 600 C 80 480, 180 470, 180 360 S 80 240, 150 150 S 250 90, 260 60"
+        fill="none" stroke="#6a675e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M60 600 C 80 480, 180 470, 180 360 S 80 240, 150 150 S 250 90, 260 60"
+        fill="none" stroke="#17365d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 600 C 80 480, 180 470, 180 360 S 80 240, 150 150 S 250 90, 260 60"
+        fill="none" stroke="#f6f4ec" stroke-width="1.6" stroke-dasharray="3 11" stroke-linecap="round"/>
+  <circle cx="180" cy="360" r="7" fill="#9a6b0f" stroke="#efece1" stroke-width="2"/>
+  <circle cx="150" cy="150" r="7" fill="#1f6b6b" stroke="#efece1" stroke-width="2"/>
+  <circle cx="60" cy="600" r="9" fill="#fffdf7" stroke="#17365d" stroke-width="3"/>
+
+  <!-- tag -->
+  <rect x="14" y="46" width="150" height="22" rx="3" fill="#fffdf7" stroke="#a7a091"/>
+  <text x="22" y="61" font-family="Courier New, monospace" font-size="11" fill="#97331f">● trip-0412.mov</text>
+
+  <!-- HUD panel -->
+  <rect x="14" y="556" width="292" height="88" rx="3" fill="#fffdf7" stroke="#a7a091"/>
+  <g font-family="Courier New, monospace" font-size="13">
+    <text x="26" y="580" fill="#6a675e">speed</text>   <text x="294" y="580" text-anchor="end" fill="#1c1c1a">34 mph</text>
+    <text x="26" y="600" fill="#6a675e">heading</text> <text x="294" y="600" text-anchor="end" fill="#1c1c1a">NE · 47°</text>
+    <text x="26" y="620" fill="#6a675e">accel</text>   <text x="294" y="620" text-anchor="end" fill="#1c1c1a">0.98 g</text>
+    <text x="26" y="640" fill="#6a675e">status</text>  <text x="294" y="640" text-anchor="end" fill="#97331f">recording</text>
+  </g>
+</svg>
