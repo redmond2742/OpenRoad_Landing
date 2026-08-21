@@ -4,5 +4,4 @@ _site/
 .sass-cache/
 vendor/
 node_modules/
-Gemfile.lock
 .DS_Store
