@@ -9,7 +9,7 @@ description: >-
 # Deployment: user/org site (served at the domain root). baseurl stays empty.
 # To move to a project site (username.github.io/OpenRoad), set baseurl: "/OpenRoad".
 # Every internal link uses relative_url, so this is the only place you change it.
-url: "https://openroad.example.com"
+url: "https://openroad-landing.onrender.com/"
 baseurl: ""
 
 author:
@@ -19,7 +19,7 @@ author:
 # Leave app_store_url empty to show a "Coming Soon" CTA; set it to go live.
 app_store_url: ""
 # Placeholder for the external Asset CSV Builder web app.
-csv_builder_url: "#"
+csv_builder_url: "https://openroad-data-tools.onrender.com/"
 
 # Swappable image assets. To replace one, either drop a new file at the same
 # path in assets/img/ (keeping the filename), or point the value at a new file.
