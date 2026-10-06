@@ -15,11 +15,7 @@ body_class: page-app
       you have data you can process, review, map, and export.
     </p>
     <p style="margin-top:1.2rem">
-      {% if site.app_store_url and site.app_store_url != "" %}
-        <a class="btn btn--primary" href="{{ site.app_store_url }}">Download on the App Store</a>
-      {% else %}
-        <span class="btn btn--primary btn--disabled" aria-disabled="true">Coming soon to the App Store</span>
-      {% endif %}
+      {% include app-button.html %}
     </p>
   </div>
 </section>
@@ -29,12 +25,13 @@ body_class: page-app
     <div class="section__head">
       <p class="eyebrow">Screens</p>
       <h2 class="section__title">From a moving trip to mapped, exportable data</h2>
-      <p class="section__lead">Placeholder screenshots — swap them for real captures in <code>assets/img/</code>.</p>
+      <p class="section__lead">A real look at OpenRoad on iPhone — processing a trip into taggable observations, reviewing them, and mapping the result.</p>
     </div>
     <div class="screenshots">
-      {% include image.html src=site.images.app_collect alt="OpenRoad recording a trip, with a live speed, heading, and accelerometer readout" caption="Collect" %}
-      {% include image.html src=site.images.app_review alt="Reviewing a detected observation with confirm and dismiss controls" caption="Review" %}
-      {% include image.html src=site.images.app_map alt="Confirmed observations mapped, with an export to GeoJSON action" caption="Map & Export" %}
+      {% include image.html src=site.images.app_process alt="OpenRoad's Process screen listing batches of sight-distance, signal, and asset photos ready to tag" caption="Process" %}
+      {% include image.html src=site.images.app_review alt="Reviewing a sight-distance photo with swipe controls for Clear, Obstructed, and Unknown" caption="Review" %}
+      {% include image.html src=site.images.app_map alt="Confirmed observations mapped across a corridor, filtered by Clear and Obstructed" caption="Map" %}
+      {% include image.html src=site.images.app_detects alt="OpenRoad's list of what it detects: signal sight distance, rough pavement, roadside assets, transit stops, and more" caption="What it detects" %}
     </div>
   </div>
 </section>

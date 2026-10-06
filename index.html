@@ -16,11 +16,7 @@ body_class: page-home
         heading, and accelerometer data from your iPhone — then process, review, map, and export it.
       </p>
       <div class="hero__actions">
-        {% if site.app_store_url and site.app_store_url != "" %}
-          <a class="btn btn--primary" href="{{ site.app_store_url }}">Download on the App Store</a>
-        {% else %}
-          <span class="btn btn--primary btn--disabled" aria-disabled="true">Coming soon to the App Store</span>
-        {% endif %}
+        {% include app-button.html %}
         <a class="btn btn--ghost" href="{{ '/app/' | relative_url }}">See how it works</a>
       </div>
       <p class="hero__pipe">
@@ -30,28 +26,8 @@ body_class: page-home
     </div>
 
     <div class="hero__media">
-      <div class="phone" role="img" aria-label="OpenRoad recording a trip: a mapped route with a live data HUD">
-        <div class="phone__screen">
-          <svg class="phone__route" viewBox="0 0 260 560" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
-                  fill="none" stroke="#6a675e" stroke-width="15" stroke-linecap="round"/>
-            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
-                  fill="none" stroke="#17365d" stroke-width="7" stroke-linecap="round"/>
-            <path d="M40 540 C 60 430, 150 420, 150 320 S 60 210, 120 120 S 210 70, 220 20"
-                  fill="none" stroke="#f6f4ec" stroke-width="1.4" stroke-dasharray="3 10" stroke-linecap="round"/>
-            <circle cx="150" cy="320" r="6" fill="#9a6b0f" stroke="#eae6da" stroke-width="1.5"/>
-            <circle cx="120" cy="120" r="6" fill="#1f6b6b" stroke="#eae6da" stroke-width="1.5"/>
-            <circle cx="40" cy="540" r="8" fill="#fffdf7" stroke="#17365d" stroke-width="3"/>
-          </svg>
-          <span class="phone__tag">● REC · trip-0412.mov</span>
-          <div class="phone__hud">
-            <div class="row"><span class="k">speed</span><span>34 mph</span></div>
-            <div class="row"><span class="k">heading</span><span>NE · 47°</span></div>
-            <div class="row"><span class="k">accel</span><span>0.98 g</span></div>
-            <div class="row"><span class="k">status</span><span class="rec">recording</span></div>
-          </div>
-        </div>
-      </div>
+      {% include image.html src=site.images.hero class="hero__shot"
+         alt="OpenRoad recording a live trip — a dashcam view of the road with a map of logged observations and real-time speed, GPS, and point stats" %}
     </div>
   </div>
 </section>
@@ -91,8 +67,6 @@ body_class: page-home
 {% include workflow.html %}
 
 {% include supported-data.html %}
-
-{% include citizen-science.html %}
 
 {% include cta.html
    title="Turn your next trip into open roadway data"

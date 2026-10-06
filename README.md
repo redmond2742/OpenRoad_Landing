@@ -49,23 +49,24 @@ Real placeholder images live in `assets/img/` and are wired into the site throug
 to swap any of them**:
 
 1. **Replace the file** — drop your own image at the same path, keeping the filename
-   (e.g. overwrite `assets/img/screen-collect.svg` with a real screenshot). Nothing else to change.
+   (e.g. overwrite `assets/img/screen-process.webp` with a new screenshot). Nothing else to change.
 2. **Repoint the config** — change the path in `_config.yml` to your new file. Setting a value
    to `""` hides that (optional) image entirely.
 
 | Asset | File | Used on |
 | --- | --- | --- |
-| App "Collect" screen | `assets/img/screen-collect.svg` | App page gallery (`images.app_collect`) |
-| App "Review" screen | `assets/img/screen-review.svg` | App page gallery (`images.app_review`) |
-| App "Map & Export" screen | `assets/img/screen-map.svg` | App page gallery (`images.app_map`) |
+| Home hero screenshot | `assets/img/hero-app.webp` | Home hero (`images.hero`) |
+| App "Process" screen | `assets/img/screen-process.webp` | App page gallery (`images.app_process`) |
+| App "Review" screen | `assets/img/screen-review.webp` | App page gallery (`images.app_review`) |
+| App "Map" screen | `assets/img/screen-map.jpg` | App page gallery (`images.app_map`) |
+| App "What it detects" screen | `assets/img/screen-detects.webp` | App page gallery (`images.app_detects`) |
 | Standalone wordmark | `assets/img/logo.svg` | optional (`images.logo`) |
 | Social / SEO preview | `assets/img/og-image.svg` | `og:image` via `image:` — replace with a **1200×630 PNG/JPG** for best support |
 | Favicon | `assets/img/favicon.svg` | browser tab |
 
-The placeholders are SVGs styled to match the theme. **Swapping in a different file type**
-(e.g. a `.png` screenshot): drop the new file in `assets/img/` and update its path in
-`_config.yml` — the extension can differ from the placeholder. The header/footer logo and the
-hero phone are still inline SVG (no file needed); use the gallery images for real screenshots.
+**Swapping in a different file type** (e.g. a `.png` screenshot): drop the new file in
+`assets/img/` and update its path in `_config.yml` — the extension can differ from the old one.
+The header/footer logo is still inline SVG (no file needed); the gallery images are real screenshots.
 
 To place an image anywhere in a page:
 

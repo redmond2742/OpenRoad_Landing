@@ -211,6 +211,12 @@ ul { margin: 0; padding: 0; }
 .phone__hud .rec { color: var(--rust); font-weight: 700; }
 .phone__tag { position: absolute; top: 40px; left: 12px; font-family: var(--font-mono); font-size: 0.68rem; color: var(--rust); background: var(--paper-2); border: 1px solid var(--rule-strong); border-radius: var(--radius); padding: 2px 6px; }
 
+/* Hero screenshot — device mockup on a transparent background */
+.hero__shot {
+  display: block; width: 100%; height: auto; margin-inline: auto;
+  filter: drop-shadow(0 18px 34px rgba(23, 54, 93, 0.22));
+}
+
 @media (max-width: 860px) {
   .hero__inner { grid-template-columns: 1fr; }
   .hero__media { order: 2; }
@@ -320,9 +326,10 @@ ul { margin: 0; padding: 0; }
 .figure figcaption { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink-mute); text-align: center; margin-top: 0.5rem; }
 .prose .figure { margin: 1.4rem 0; }
 
-.screenshots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; max-width: 760px; margin-inline: auto; }
+.screenshots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; max-width: 920px; margin-inline: auto; }
 .screenshots .figure img { max-width: 260px; margin-inline: auto; }
-@media (max-width: 720px) { .screenshots { grid-template-columns: 1fr; max-width: 320px; } }
+@media (max-width: 860px) { .screenshots { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 560px; } }
+@media (max-width: 480px) { .screenshots { grid-template-columns: 1fr; max-width: 320px; } }
 
 /* ---------- Blog ---------- */
 .post-list { list-style: none; display: grid; gap: 0.9rem; }

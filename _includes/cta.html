@@ -9,11 +9,7 @@
       <p>{{ include.text | default: "Download OpenRoad for iPhone and start collecting, reviewing, and mapping the road around you." }}</p>
     </div>
     <div class="cta-band__actions">
-      {% if site.app_store_url and site.app_store_url != "" %}
-        <a class="btn btn--primary" href="{{ site.app_store_url }}">Download on the App Store</a>
-      {% else %}
-        <span class="btn btn--primary btn--disabled" aria-disabled="true" title="Coming soon">Coming soon to the App Store</span>
-      {% endif %}
+      {% include app-button.html %}
       {% if include.secondary_url %}
         {%- assign sec = include.secondary_url -%}
         {%- if sec contains "://" or sec contains "mailto:" -%}

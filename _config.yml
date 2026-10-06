@@ -16,8 +16,11 @@ author:
   name: The OpenRoad Team
 
 # ---- Drop-in slots (fill these when assets/links are ready) ----
-# Leave app_store_url empty to show a "Coming Soon" CTA; set it to go live.
+# Primary app CTA: if app_store_url is set it wins ("Download on the App Store");
+# otherwise github_url is used ("View on GitHub"); if both are empty, a disabled
+# "Coming soon" button shows. See _includes/app-button.html.
 app_store_url: ""
+github_url: "https://github.com/redmond2742/OpenRoad_iOS"
 # Placeholder for the external Asset CSV Builder web app.
 csv_builder_url: "https://openroad-data-tools.onrender.com/"
 
@@ -25,9 +28,11 @@ csv_builder_url: "https://openroad-data-tools.onrender.com/"
 # path in assets/img/ (keeping the filename), or point the value at a new file.
 # Set a value to "" to hide that image (optional ones simply won't render).
 images:
-  app_collect: /assets/img/screen-collect.svg   # App page — "Collect" screen
-  app_review:  /assets/img/screen-review.svg    # App page — "Review" screen
-  app_map:     /assets/img/screen-map.svg        # App page — "Map / Export" screen
+  hero:        /assets/img/hero-app.webp         # Home hero — OpenRoad recording a live trip
+  app_process: /assets/img/screen-process.webp   # App page — "Process" screen
+  app_review:  /assets/img/screen-review.webp    # App page — "Review" screen
+  app_map:     /assets/img/screen-map.jpg        # App page — "Map" screen
+  app_detects: /assets/img/screen-detects.webp   # App page — "What it detects" screen
   logo:        /assets/img/logo.svg              # optional standalone wordmark
 
 # Social share / SEO preview image (used by jekyll-seo-tag as og:image).

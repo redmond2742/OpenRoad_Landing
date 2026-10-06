@@ -19,6 +19,19 @@ body_class: page-csv
 
 <div class="container page-body prose" markdown="1">
 
+<div class="big-cta">
+  <h2>Open the Asset CSV Builder</h2>
+  <p class="lead">Create and download a CSV inventory in your browser, then load it into OpenRoad.</p>
+  <p>
+    {% assign csv = site.csv_builder_url %}
+    {% if csv and csv != "" and csv != "#" %}
+      <a class="btn btn--primary" href="{{ csv }}" target="_blank" rel="noopener">Launch the CSV Builder →</a>
+    {% else %}
+      <span class="btn btn--primary btn--disabled" aria-disabled="true">CSV Builder link coming soon</span>
+    {% endif %}
+  </p>
+</div>
+
 ## Why a CSV of assets?
 
 OpenRoad's **Process** step compares your trips against inventory files you already have. But not every agency or volunteer group starts with a clean GIS layer. The Asset CSV Builder gives you a simple way to create one: a plain **CSV inventory** of the static assets you care about, ready to load into OpenRoad.
@@ -38,19 +51,6 @@ Static assets are the fixed things along a corridor:
 </div>
 
 Because the output is ordinary CSV, it's easy to edit, version, and share — and it works alongside the other formats OpenRoad understands, like GTSS, GTFS, and GIS/GeoJSON.
-
-<div class="big-cta">
-  <h2>Open the Asset CSV Builder</h2>
-  <p class="lead">Create and download a CSV inventory in your browser, then load it into OpenRoad.</p>
-  <p>
-    {% assign csv = site.csv_builder_url %}
-    {% if csv and csv != "" and csv != "#" %}
-      <a class="btn btn--primary" href="{{ csv }}" target="_blank" rel="noopener">Launch the CSV Builder →</a>
-    {% else %}
-      <span class="btn btn--primary btn--disabled" aria-disabled="true">CSV Builder link coming soon</span>
-    {% endif %}
-  </p>
-</div>
 
 ## What a simple inventory looks like
 
