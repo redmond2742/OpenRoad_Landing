@@ -7,7 +7,7 @@ tags: [GTFS]
 excerpt: "GTFS describes where transit is supposed to be. OpenRoad helps you check that against what's actually built on the street — shelters, signs, curb ramps, and stop locations."
 ---
 
-**GTFS** — the General Transit Feed Specification — is how the world publishes transit. It powers trip planners, arrival predictions, and countless maps. It's excellent at describing the *scheduled* system: routes, stops, and the times a bus should be there.
+**[GTFS]({{ site.gtfs_url }})** — the General Transit Feed Specification — is how the world publishes transit. It powers trip planners, arrival predictions, and countless maps. It's excellent at describing the *scheduled* system: routes, stops, and the times a bus should be there.
 
 What GTFS doesn't tell you is what the stop physically looks like. Is there a shelter? A sign? A bench? A safe way to reach it? Does the marked stop location still match where the bus actually pulls over after a repaving project shifted the curb?
 

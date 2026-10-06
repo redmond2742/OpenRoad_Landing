@@ -54,8 +54,8 @@ No special hardware is required. A phone mount and a normal drive, ride, or walk
 
 Raw sensor streams become useful when they're compared against known references. OpenRoad processes trips using **existing inventory files** rather than asking you to start from a blank slate:
 
-- **GTSS** — evaluate signal visibility and sight distance along an approach.
-- **GTFS** — check bus stops and transit infrastructure against what's on the ground.
+- **[GTSS]({{ site.gtss_url }})** — evaluate signal visibility and sight distance along an approach.
+- **[GTFS]({{ site.gtfs_url }})** — check bus stops and transit infrastructure against what's on the ground.
 - **GIS / GeoJSON** — align trips to routes and geographic infrastructure layers.
 - **CSV asset inventories** — bring in signs, markings, crosswalks, streetlights, and other static assets.
 

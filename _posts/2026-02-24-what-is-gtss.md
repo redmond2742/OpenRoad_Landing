@@ -9,7 +9,7 @@ excerpt: "A look at how OpenRoad uses GTSS-style data to evaluate whether traffi
 
 A traffic signal only works if drivers can see it in time to react. That sounds obvious, yet signal visibility quietly degrades all the time — a tree grows into the sight line, a truck parks in the wrong spot, a new billboard competes for attention, or the approach grade hides the heads until it's almost too late.
 
-**GTSS** data describes signals and their approaches in a structured way, and OpenRoad uses it to evaluate **signal visibility and sight distance**: is the signal visible far enough back along the approach for a driver traveling at the posted speed to stop or proceed safely?
+**[GTSS]({{ site.gtss_url }})** data describes signals and their approaches in a structured way, and OpenRoad uses it to evaluate **signal visibility and sight distance**: is the signal visible far enough back along the approach for a driver traveling at the posted speed to stop or proceed safely?
 
 ## Why sight distance is tricky
 

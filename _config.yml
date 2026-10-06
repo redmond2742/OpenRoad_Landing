@@ -24,6 +24,10 @@ github_url: "https://github.com/redmond2742/OpenRoad_iOS"
 # Placeholder for the external Asset CSV Builder web app.
 csv_builder_url: "https://openroad-data-tools.onrender.com/"
 
+# Reference links for the data standards OpenRoad works with.
+gtss_url: "https://gtss.dev/"
+gtfs_url: "https://gtfs.org/"
+
 # Swappable image assets. To replace one, either drop a new file at the same
 # path in assets/img/ (keeping the filename), or point the value at a new file.
 # Set a value to "" to hide that image (optional ones simply won't render).
